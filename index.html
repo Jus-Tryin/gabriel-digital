@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Digital | Professional Web Designer & Developer in Gulu, Uganda</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Gabriel Digital builds high-converting landing pages, business websites, and web applications in Gulu, Uganda. Get your business found and booked online.">
+    <meta name="keywords" content="Web Designer Gulu, Web Developer Uganda, Gabriel Digital, Landing Pages, E-commerce Development, DStyleHub, Laker Angel Portfolio">
+    <meta name="author" content="Acach Gabriel Bruno">
+
+    <!-- Open Graph / Social Media Tags -->
+    <meta property="og:title" content="Gabriel Digital | Web Designer & Developer">
+    <meta property="og:description" content="High-converting landing pages, business sites, and web apps designed to scale your brand.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/profile.jpg">
+    <meta property="og:site_name" content="Gabriel Digital">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tailwind Configuration script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandCyan: '#00CCCC',
+                        brandBlue: '#005CCF',
+                        brandDark: '#0A0A0A',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <img src="assets/images/logo.png" alt="Gabriel Digital Logo Mark" class="h-10 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="hidden w-10 h-10 rounded-xl bg-gray-900 text-white items-center justify-center font-black text-lg tracking-tighter shadow-md">GD</div>
+                <span class="font-bold text-gray-900 text-lg tracking-tight">Gabriel Digital</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-700">
+                <a href="#services" class="hover:text-brandBlue transition-colors">Services</a>
+                <a href="#offer" class="hover:text-brandBlue transition-colors">Offers</a>
+                <a href="#portfolio" class="hover:text-brandBlue transition-colors">Portfolio</a>
+            </nav>
+            <div>
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-brandBlue text-white font-semibold text-sm hover:bg-opacity-90 transition-all shadow-md shadow-brandBlue/20">Let's Talk</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-gray-50/50 to-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 text-center md:text-left">
+                <span class="inline-block py-1.5 px-4 rounded-full bg-blue-50 text-brandBlue text-xs font-bold tracking-wider uppercase mb-6 border border-blue-100 shadow-sm">Availability of Digital Visibility</span>
+                <h1 class="text-4xl md:text-6xl font-black tracking-tight text-gray-900 mb-6 leading-[1.15]">
+                    Websites that get businesses <span class="text-brandBlue">found & booked.</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-xl">
+                    Hi, I'm Gabriel—a professional Web Designer based in Gulu, Uganda. I build high-converting landing pages, business sites, and web applications designed to scale your brand.
+                </p>
+                <div>
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-brandBlue text-white font-bold hover:bg-opacity-90 transition-all shadow-lg shadow-brandBlue/20 text-base">Start Your Project</a>
+                </div>
+            </div>
+            <!-- Profile Image (Lightbox Enabled) -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl bg-gray-100 border-4 border-white shadow-2xl overflow-hidden cursor-pointer group" onclick="openLightbox('assets/images/profile.jpg', 'Gabriel - Professional Web Designer')">
+                    <img src="assets/images/profile.jpg" alt="Portrait of Gabriel, Professional Web Designer based in Gulu Uganda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brandBlue mb-2 block">Specialized Solutions</span>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Core Services</h2>
+                <p class="text-gray-600 text-base">Three specialized digital solutions built to elevate your online footprint.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-brandBlue/30 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-brandBlue flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition-transform">01</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Landing Pages</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">High-impact single pages optimized for campaigns, conversions, and fast user action.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-brandBlue/30 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-brandBlue flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition-transform">02</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Business Sites</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Multi-page corporate or commercial websites establishing deep credibility and trust.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-brandBlue/30 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-brandBlue flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition-transform">03</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Web Apps</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Dynamic web systems equipped with interactive ordering flows and admin command consoles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer / Packages Section -->
+    <section id="offer" class="py-24 bg-gray-50/50 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brandBlue mb-2 block">Zero Risk Guarantee</span>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Special Offer</h2>
+                <p class="text-gray-600 text-base">Get a clear look at your new digital presence before committing.</p>
+            </div>
+            <div class="max-w-lg mx-auto bg-white p-8 md:p-10 rounded-3xl border border-gray-200/80 shadow-xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-brandBlue text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl uppercase tracking-wider">Featured</div>
+                <h3 class="text-2xl font-black text-gray-900 mb-2">Free Website Preview</h3>
+                <p class="text-gray-600 text-sm mb-6">Experience a custom preview tailored to your business model before you build.</p>
+                <ul class="space-y-3 text-sm text-gray-700 mb-8">
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brandBlue"></span> Zero upfront commitment</li>
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brandBlue"></span> Tailored UI layout concept</li>
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brandBlue"></span> Mobile-responsive verification</li>
+                </ul>
+                <a href="#contact" class="block w-full py-4 rounded-xl bg-gray-900 text-white font-bold text-center hover:bg-brandBlue transition-all shadow-md">Claim Free Preview</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section with Full-Screen Lightbox Support -->
+    <section id="portfolio" class="py-24 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brandBlue mb-2 block">Proven Track Record</span>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Portfolio Showcase</h2>
+                <p class="text-gray-600 text-base">Tap any preview image to expand full-screen, or click through to explore live builds.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Project 1: DStyleHub -->
+                <div class="p-6 rounded-2xl bg-gray-50 border border-gray-200 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all">
+                    <div>
+                        <div class="h-44 rounded-xl bg-gray-900 mb-6 overflow-hidden relative cursor-pointer group" onclick="openLightbox('assets/images/DstyleHUB.jpg', 'DStyleHub Store & Admin Portal')">
+                            <img src="assets/images/DstyleHUB.jpg" alt="DStyleHub Menswear e-commerce catalog and store preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">DStyleHub Store System</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Full clothing store e-commerce build with variant sizing, shopping cart workflows, and an admin command console.</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-200 flex items-center justify-between">
+                        <a href="https://dstylhub.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-brandBlue hover:underline">
+                            <span>View Live</span> &rarr;
+                        </a>
+                        <span class="text-xs text-gray-400 font-medium">E-Commerce</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Kick Snacks -->
+                <div class="p-6 rounded-2xl bg-gray-50 border border-gray-200 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all">
+                    <div>
+                        <div class="h-44 rounded-xl bg-gray-900 mb-6 overflow-hidden relative cursor-pointer group" onclick="openLightbox('assets/images/Kicksnack.jpg', 'Kick Snacks Landing Page')">
+                            <img src="assets/images/Kicksnack.jpg" alt="Kick Snacks FMCG promotional product landing page preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Kick Snacks Landing Page</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Vibrant product showcase layout engineered for fast-moving consumer goods to maximize brand visibility.</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-200 flex items-center justify-between">
+                        <a href="https://project-pxy5j.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-brandBlue hover:underline">
+                            <span>View Live</span> &rarr;
+                        </a>
+                        <span class="text-xs text-gray-400 font-medium">Landing Page</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Laker Angel Portfolio -->
+                <div class="p-6 rounded-2xl bg-gray-50 border border-gray-200 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all">
+                    <div>
+                        <div class="h-44 rounded-xl bg-gray-900 mb-6 overflow-hidden relative cursor-pointer group" onclick="openLightbox('assets/images/LakerAngel.jpg', 'Laker Angel Portfolio')">
+                            <img src="assets/images/LakerAngel.jpg" alt="Laker Angel Certified Accountant personal portfolio layout preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Laker Angel Portfolio</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Clean multi-tab personal portfolio structured to establish digital authority and professional trust.</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-200 flex items-center justify-between">
+                        <a href="https://jus-tryin.github.io/AngelLaker-Portfolio/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-brandBlue hover:underline">
+                            <span>View Live</span> &rarr;
+                        </a>
+                        <span class="text-xs text-gray-400 font-medium">Personal Brand</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / WhatsApp Section -->
+    <section id="contact" class="py-24 bg-gray-900 text-white text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-brandCyan mb-2 block">Get Started Today</span>
+            <h2 class="text-3xl md:text-4xl font-black mb-4">Let's Build Your Digital Presence</h2>
+            <p class="text-gray-400 mb-8 max-w-lg mx-auto text-base">Ready to get your business found and booked? Reach out directly via WhatsApp to start your project.</p>
+
+            <a href="https://wa.me/256758727445" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#25D366] text-white font-bold text-base hover:bg-opacity-90 transition-all shadow-lg shadow-[#25D366]/20">
+                <span>Chat on WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-black text-center text-xs text-gray-500 border-t border-gray-900">
+        <p>&copy; 2026 Gabriel Digital. All rights reserved. Gulu, Uganda.</p>
+    </footer>
+
+    <!-- Full-Screen Lightbox Modal Component -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/90 hidden flex-col items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl font-bold p-2 hover:text-brandCyan transition-colors">&times;</button>
+        <img id="lightboxImg" src="" alt="Full Screen Preview" class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl mb-4">
+        <p id="lightboxCaption" class="text-white text-sm font-medium tracking-wide"></p>
+    </div>
+
+    <!-- Lightbox Script -->
+    <script>
+        function openLightbox(imgSrc, captionText) {
+            const modal = document.getElementById('lightboxModal');
+            const modalImg = document.getElementById('lightboxImg');
+            const modalCaption = document.getElementById('lightboxCaption');
+
+            modalImg.src = imgSrc;
+            modalCaption.innerText = captionText;
+            modal.style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightboxModal').style.display = 'none';
+        }
+
+        document.getElementById('lightboxModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            } 
+        });
+    </script>
+
+</body>
+</html>

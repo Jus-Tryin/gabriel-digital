@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Gabriel-digital.acachbruno.workers.dev/sitemap.xml

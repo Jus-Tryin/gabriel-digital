@@ -1,0 +1,19 @@
+@import "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/tailwind.min.css";
+
+/* Custom Brand Color Extensions */
+:root {
+    --brand-cyan: #00CCCC;
+    --brand-blue: #005CCF;
+    --brand-dark: #0A0A0A;
+}
+
+/* Custom Selection Styling */
+::selection {
+    background-color: var(--brand-cyan);
+    color: #000000;
+}
+
+/* Smooth Scrolling Enabled */
+html {
+    scroll-behavior: smooth;
+}

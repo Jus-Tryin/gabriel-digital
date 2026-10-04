@@ -1,0 +1,12 @@
+# Gabriel Digital
+
+> Websites that get businesses found and booked. Professional web development, landing pages, and web apps based in Gulu, Uganda.
+
+## Core Services
+- **Landing Pages:** High-impact single pages optimized for campaigns, conversions, and fast user action.
+- **Business Sites:** Modern multi-page sites built with clean code and structured SEO.
+- **Web Applications:** Custom dynamic web systems equipped with interactive flows.
+
+## Key Links
+- Main Website: https://gabriel-digital.pages.dev/
+- Sitemap: https://gabriel-digital.pages.dev/sitemap.xml

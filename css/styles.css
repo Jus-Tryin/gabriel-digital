@@ -1,50 +1,198 @@
 /* ==========================================================================
-   Gabriel Digital - External Stylesheet
-   Design Standards: Apple Fluid Motion & Mobile-Native Rules
-   Brand Palette: Signal Blue (#0055FF), Teal (#00CCCC), Black (#000000), White
+   Gabriel Digital — Custom Styles
+   Platform layer (mobile-native) + Apple design polish
+   Order:
+   1. Platform layer    (tap, scroll, safe areas, inputs)
+   2. Materials         (translucent header, tiered surfaces)
+   3. Typography        (size-specific tracking/leading)
+   4. Press feedback    (:active on pointer-down)
+   5. Hover gating      (@media hover:hover only)
+   6. Motion            (scroll reveal, entrance)
+   7. Lightbox
+   8. Reduced motion / transparency
    ========================================================================== */
 
+/* ---------- 1. Platform layer ---------- */
 html {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-text-size-adjust: 100%;
-    overscroll-behavior: none;
-    scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: 5rem;
+  background: #000;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
 }
 
 body {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    min-height: 100dvh;
+  overscroll-behavior-y: none;
 }
 
+a, button, [role="button"], .press {
+  touch-action: manipulation;
+}
+
+button, .press, [role="button"] {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+img { -webkit-user-drag: none; }
+
+/* Safe areas */
+.safe-top { padding-top: env(safe-area-inset-top, 0px); }
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom, 0px); }
+
+.site-header {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.fab-whatsapp {
+  right: calc(16px + env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+}
+
+.site-footer {
+  padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
+}
+
+/* Inputs: 16px floor stops iOS zoom-on-focus */
 input, textarea, select {
-    font-size: 16px; /* Prevents auto-zoom on mobile safari */
+  font-size: 16px;
 }
 
-button, a, [role="button"] {
-    touch-action: manipulation;
-    user-select: none;
-    -webkit-user-select: none;
+/* Minimum tap targets */
+.tap-target { min-height: 44px; }
+
+/* ---------- 2. Materials ---------- */
+.site-header {
+  background: rgba(0, 0, 0, 0.72);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* Glassmorphism Navigation */
-.nav-glass {
-    background: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
+/* ---------- 3. Typography ---------- */
+h1, h2, h3 { text-wrap: balance; }
+.display {
+  letter-spacing: -0.025em;
+  line-height: 1.05;
 }
+.h2-tight { letter-spacing: -0.02em; }
+p { text-wrap: pretty; }
 
-/* Hover Gating for Fine Pointers */
+/* ---------- 4. Press feedback ---------- */
+.press {
+  transition-property: transform, background-color, box-shadow, opacity, color, border-color;
+  transition-duration: 120ms;
+  transition-timing-function: cubic-bezier(.2, .8, .2, 1);
+}
+.press:active { transform: scale(0.97); }
+
+/* Card group press (portfolio tiles) */
+.tile {
+  transition: transform 120ms cubic-bezier(.2, .8, .2, 1),
+              box-shadow 200ms cubic-bezier(.2, .8, .2, 1),
+              border-color 200ms ease;
+}
+.tile:active { transform: scale(0.985); }
+
+/* ---------- 5. Hover (desktop only) ---------- */
 @media (hover: hover) and (pointer: fine) {
-    a:hover, button:hover {
-        transform: translateY(-1px);
-        transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1), color 150ms ease;
-    }
+  .press:hover { transform: translateY(-1px); }
+  .press:hover:active { transform: scale(0.97); }
+
+  .card-lift {
+    transition: transform 260ms cubic-bezier(.2, .8, .2, 1),
+                box-shadow 260ms cubic-bezier(.2, .8, .2, 1),
+                border-color 260ms ease;
+  }
+  .card-lift:hover { transform: translateY(-4px); }
+
+  .tile:hover { transform: scale(1.02); }
 }
 
-/* Active Press State */
-:active {
-    transform: scale(0.98);
-    transition: transform 100ms ease-out;
+/* ---------- 6. Motion ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes gd-rise {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: none; }
+  }
+  .entrance > * { animation: gd-rise 700ms cubic-bezier(.2, .8, .2, 1) backwards; }
+  .entrance > :nth-child(2) { animation-delay: 80ms; }
+  .entrance > :nth-child(3) { animation-delay: 160ms; }
+  .entrance > :nth-child(4) { animation-delay: 240ms; }
+}
+
+/* Scroll reveal — only on when JS adds html.js-reveal */
+html.js-reveal .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+html.js-reveal .reveal.in {
+  opacity: 1;
+  transform: none;
+  transition: opacity 650ms cubic-bezier(.2, .8, .2, 1),
+              transform 650ms cubic-bezier(.2, .8, .2, 1);
+}
+
+/* ---------- 7. Lightbox ---------- */
+#lightboxModal {
+  opacity: 0;
+  transition: opacity 220ms cubic-bezier(.2, .8, .2, 1);
+  overscroll-behavior: contain;
+  padding: calc(1rem + env(safe-area-inset-top, 0px))
+           calc(1rem + env(safe-area-inset-right, 0px))
+           calc(1rem + env(safe-area-inset-bottom, 0px))
+           calc(1rem + env(safe-area-inset-left, 0px));
+}
+#lightboxModal.is-open { opacity: 1; }
+
+#lightboxClose {
+  top: calc(1.25rem + env(safe-area-inset-top, 0px));
+  right: calc(1.25rem + env(safe-area-inset-right, 0px));
+}
+
+#lightboxImg {
+  opacity: 0;
+  transform: scale(0.88);
+  transition: transform 260ms cubic-bezier(.2, .8, .2, 1),
+              opacity 220ms ease-out;
+}
+#lightboxModal.is-open #lightboxImg {
+  opacity: 1;
+  transform: none;
+}
+
+#lightboxCaption {
+  opacity: 0;
+  transition: opacity 220ms ease-out 60ms;
+}
+#lightboxModal.is-open #lightboxCaption { opacity: 1; }
+
+/* ---------- 8. Reduced motion / transparency ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  #lightboxImg,
+  #lightboxModal.is-open #lightboxImg {
+    transform: none !important;
+    transition: opacity 150ms linear;
+  }
+  .press:active,
+  .tile:active { transform: none; }
+  .entrance > * { animation: none; }
+  html.js-reveal .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .site-header {
+    background: #000;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
 }

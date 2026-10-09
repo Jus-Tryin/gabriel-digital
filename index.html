@@ -1,350 +1,407 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
-    <title>Gabriel Digital | Web Design & Development in Gulu, Uganda</title>
-    
-    <!-- SEO & URL Meta Tags -->
-    <link rel="canonical" href="https://gabriel-digital.pages.dev/">
-    <meta name="description" content="Professional Web Designer and Developer based in Gulu, Uganda. Building high-converting landing pages, business websites, and web applications that scale your brand.">
-    <meta name="keywords" content="Web Design Gulu, Web Developer Uganda, Gabriel Digital, Landing Pages, Backend Web Development">
-    
-    <!-- Meta Theme Colors -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+    <meta name="google-site-verification" content="aDeyVqDViCgB5sl3jQMiW6i92HucJ3pqQEuBRbUVyv0" />
+    <title>Gabriel Digital | Professional Web Designer & Developer in Gulu, Uganda</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Gabriel Digital builds high-converting landing pages, business websites, and web applications in Gulu, Uganda. Get more customers for your business online.">
+    <meta name="keywords" content="Web Designer Gulu, Web Developer Uganda, Gabriel Digital, Landing Pages, E-commerce Development, DStyleHub, Laker Angel Portfolio">
+    <meta name="author" content="Acach Gabriel Bruno">
+
+    <!-- Open Graph / Social Media Tags -->
+    <meta property="og:title" content="Gabriel Digital | Web Designer & Developer">
+    <meta property="og:description" content="High-converting landing pages, business sites, and web apps designed to scale your brand.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gabriel-digital.pages.dev/assets/images/og-image.jpg">
+    <meta name="twitter:image" content="https://gabriel-digital.pages.dev/assets/images/og-image.jpg">
+    <meta property="og:site_name" content="Gabriel Digital">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://gabriel-digital.pages.dev/">
+
+    <!-- Twitter / X Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gabriel Digital | Web Designer & Developer">
+    <meta name="twitter:description" content="High-converting landing pages, business sites, and web apps designed to scale your brand.">
+
+    <!-- Theme Color (page is dark in both schemes) -->
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#000000">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#000000">
     <meta name="color-scheme" content="dark">
 
-    <!-- Local Business Schema -->
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+
+    <!-- Compiled Tailwind (generated — do not edit by hand) -->
+    <link rel="stylesheet" href="css/tailwind.css">
+    <!-- Custom styles (platform layer + Apple polish) -->
+    <link rel="stylesheet" href="css/styles.css">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "ProfessionalService",
       "name": "Gabriel Digital",
-      "url": "https://gabriel-digital.pages.dev/",
+      "description": "Web designer in Gulu, Uganda specializing in landing pages and business websites",
+      "url": "https://gabriel-digital.pages.dev",
+      "sameAs": ["https://www.instagram.com/gabriel_digital.co/"],
+      "image": "https://gabriel-digital.pages.dev/assets/images/og-image.jpg",
+      "telephone": "+256758727445",
+      "priceRange": "UGX 350,000 - 2,250,000",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Gulu",
-        "addressCountry": "Uganda"
+        "addressCountry": "UG"
       },
-      "description": "Professional Web Designer and Web Developer based in Gulu, Uganda.",
-      "priceRange": "$$"
+      "areaServed": "Gulu, Uganda",
+      "serviceType": ["Web Design", "Landing Page Design", "Web App Development"],
+      "offers": {
+        "@type": "Offer",
+        "name": "Launch Package: One-Page Website",
+        "priceCurrency": "UGX",
+        "price": "350000"
+      }
     }
     </script>
-
-    <!-- Tailwind CSS Compiled Output via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        signalBlue: '#0055FF',
-                        tealAccent: '#00CCCC',
-                        darkBg: '#000000',
-                        cardBg: '#0A0A0A',
-                        borderSubtle: '#1F1F1F'
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- External Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-darkBg text-white antialiased selection:bg-signalBlue selection:text-white">
+<body class="bg-darkBg text-white font-sans antialiased selection:bg-signalBlue selection:text-white">
 
-    <!-- Top Navigation -->
-    <header class="sticky top-0 z-50 nav-glass border-b border-borderSubtle">
+    <!-- ============ Header ============ -->
+    <header class="site-header sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-2 group">
-                <div class="w-9 h-9 rounded-lg bg-signalBlue flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-signalBlue/30">
-                    GD
-                </div>
-                <span class="font-semibold tracking-tight text-lg text-white">Gabriel Digital</span>
+            <a href="#" class="flex items-center gap-3 press">
+                <img src="assets/images/logo.png" alt="Gabriel Digital logo" class="h-9 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="hidden w-9 h-9 rounded-lg bg-signalBlue items-center justify-center font-black text-lg tracking-tighter shadow-lg shadow-signalBlue/30">GD</div>
+                <span class="font-semibold tracking-tight text-base sm:text-lg">Gabriel Digital</span>
             </a>
-            
-            <nav class="hidden md:flex items-center gap-8 text-sm text-gray-400">
-                <a href="#services" class="hover:text-tealAccent transition-colors">Packages</a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+                <a href="#services"  class="hover:text-tealAccent transition-colors">Services</a>
+                <a href="#packages"  class="hover:text-tealAccent transition-colors">Packages</a>
+                <a href="#offer"     class="hover:text-tealAccent transition-colors">Free Preview</a>
                 <a href="#portfolio" class="hover:text-tealAccent transition-colors">Portfolio</a>
-                <a href="#about" class="hover:text-tealAccent transition-colors">About</a>
             </nav>
 
-            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-signalBlue text-white text-sm font-medium hover:bg-blue-600 transition-all shadow-lg shadow-signalBlue/20 active:scale-95">
+            <a href="https://wa.me/256758727445?text=Hi%20Gabriel%2C%20I%20found%20your%20website%20and%20would%20like%20to%20talk."
+               target="_blank" rel="noopener noreferrer"
+               class="press hidden sm:inline-flex items-center px-4 py-2.5 rounded-xl bg-signalBlue text-white text-sm font-semibold shadow-lg shadow-signalBlue/20">
                 Let's Talk
             </a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative pt-20 pb-16 px-6 overflow-hidden">
+    <!-- ============ Hero ============ -->
+    <section class="relative pt-16 pb-16 md:pt-24 md:pb-24 px-6 overflow-hidden">
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-signalBlue/10 blur-[120px] pointer-events-none rounded-full"></div>
-        
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-borderSubtle border border-borderSubtle text-xs font-medium text-tealAccent mb-6">
-                <span class="w-2 h-2 rounded-full bg-tealAccent animate-pulse"></span>
-                Availability of Digital Visibility
-            </div>
 
-            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
-                Websites that bring businesses <span class="text-tealAccent">more</span> <span class="text-signalBlue">customers.</span>
-            </h1>
-
-            <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                Hi, I'm Gabriel—a professional Web Designer based in Gulu, Uganda. I build high-converting landing pages, business sites, and web applications designed to scale your brand.
-            </p>
-
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-tealAccent text-black font-semibold hover:bg-teal-400 transition-all shadow-xl shadow-tealAccent/20 active:scale-98 flex items-center justify-center gap-2">
-                    Start Your Project
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                </a>
-                <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-cardBg border border-borderSubtle text-white font-medium hover:bg-borderSubtle transition-all active:scale-98 flex items-center justify-center">
-                    View Portfolio
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Profile Feature Section -->
-    <section id="about" class="py-12 px-6">
-        <div class="max-w-4xl mx-auto">
-            <div class="p-8 rounded-3xl bg-cardBg border border-borderSubtle relative overflow-hidden flex flex-col md:flex-row items-center gap-8">
-                <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-tealAccent/5 rounded-full blur-3xl pointer-events-none"></div>
-                
-                <div class="w-48 h-48 rounded-2xl overflow-hidden border border-borderSubtle flex-shrink-0 shadow-2xl">
-                    <img src="watermarked_img_17069258302280041851.jpg" alt="Gabriel Digital Profile" class="w-full h-full object-cover">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="md:col-span-7 text-center md:text-left entrance">
+                <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-borderSubtle border border-borderSubtle text-xs font-medium text-tealAccent mb-6">
+                    <span class="w-2 h-2 rounded-full bg-tealAccent animate-pulse"></span>
+                    Availability of Digital Visibility
+                </span>
+                <h1 class="display text-4xl sm:text-5xl md:text-6xl font-black mb-6">
+                    Websites that bring businesses
+                    <span class="text-tealAccent">more</span>
+                    <span class="text-signalBlue">customers.</span>
+                </h1>
+                <p class="text-base sm:text-lg text-gray-400 mb-8 leading-relaxed max-w-xl mx-auto md:mx-0">
+                    Hi, I'm Gabriel—a professional Web Designer based in Gulu, Uganda. I build high-converting landing pages, business sites, and web applications designed to scale your brand.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4">
+                    <a href="https://wa.me/256758727445?text=Hi%20Gabriel%2C%20I%20would%20like%20to%20start%20a%20website%20project."
+                       target="_blank" rel="noopener noreferrer"
+                       class="press w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-tealAccent text-black font-bold shadow-xl shadow-tealAccent/20">
+                        Start Your Project
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                    <a href="#portfolio"
+                       class="press w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl bg-cardBg border border-borderSubtle text-white font-medium">
+                        View Portfolio
+                    </a>
                 </div>
+            </div>
 
-                <div>
-                    <h2 class="text-2xl font-bold text-white mb-3">Precision Engineering & Design</h2>
-                    <p class="text-gray-400 leading-relaxed mb-4">
-                        Every project is meticulously coded using clean semantic layouts, robust backend architectures, and performance-first workflows optimized for modern businesses.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 rounded-lg bg-borderSubtle text-xs text-tealAccent font-mono">Node.js & Python</span>
-                        <span class="px-3 py-1 rounded-lg bg-borderSubtle text-xs text-signalBlue font-mono">Tailwind CSS</span>
-                        <span class="px-3 py-1 rounded-lg bg-borderSubtle text-xs text-white font-mono">UI/UX Architecture</span>
-                    </div>
+            <div class="md:col-span-5 flex justify-center">
+                <div class="tile relative w-64 h-64 md:w-80 md:h-80 rounded-2xl bg-cardBg border border-borderSubtle shadow-2xl overflow-hidden cursor-pointer"
+                     onclick="openLightbox('assets/images/profile.jpg', 'Gabriel — Professional Web Designer', this)">
+                    <img src="assets/images/profile.jpg"
+                         alt="Portrait of Gabriel, Professional Web Designer based in Gulu, Uganda"
+                         loading="eager" decoding="async" width="320" height="320"
+                         class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services / Packages Section (Launch, Grow, Scale with Exact Pricing) -->
-    <section id="services" class="py-16 px-6 border-t border-borderSubtle">
+    <!-- ============ Services ============ -->
+    <section id="services" class="py-20 md:py-24 px-6 border-t border-borderSubtle">
         <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-12">
-                <span class="text-tealAccent text-xs font-mono uppercase tracking-widest">Choose Your Package</span>
-                <h2 class="text-3xl font-bold text-white mt-2">Clear Scope, Clear Prices, No Surprises.</h2>
+            <div class="section-head text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-mono uppercase tracking-widest text-tealAccent block mb-2">Specialized Solutions</span>
+                <h2 class="h2-tight text-3xl md:text-4xl font-black mb-4">Core Services</h2>
+                <p class="text-gray-400 text-base">Website design in Gulu, Uganda: three specialized solutions built to bring your business more customers.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Package 1: Launch -->
-                <div class="p-8 rounded-3xl bg-cardBg border border-borderSubtle flex flex-col justify-between hover:border-signalBlue/50 transition-all">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="card-lift p-8 rounded-2xl bg-cardBg border border-borderSubtle">
+                    <div class="w-12 h-12 rounded-xl bg-signalBlue/10 text-signalBlue flex items-center justify-center font-bold text-xl mb-6">01</div>
+                    <h3 class="text-xl font-bold mb-3">Landing Pages</h3>
+                    <p class="text-gray-400 text-base leading-relaxed">High-impact single pages optimized for campaigns, conversions, and fast user action.</p>
+                </div>
+                <div class="card-lift p-8 rounded-2xl bg-cardBg border border-borderSubtle">
+                    <div class="w-12 h-12 rounded-xl bg-tealAccent/10 text-tealAccent flex items-center justify-center font-bold text-xl mb-6">02</div>
+                    <h3 class="text-xl font-bold mb-3">Business Sites</h3>
+                    <p class="text-gray-400 text-base leading-relaxed">Multi-page corporate or commercial websites establishing deep credibility and trust.</p>
+                </div>
+                <div class="card-lift p-8 rounded-2xl bg-cardBg border border-borderSubtle">
+                    <div class="w-12 h-12 rounded-xl bg-signalBlue/10 text-signalBlue flex items-center justify-center font-bold text-xl mb-6">03</div>
+                    <h3 class="text-xl font-bold mb-3">Web Apps</h3>
+                    <p class="text-gray-400 text-base leading-relaxed">Dynamic web systems equipped with interactive ordering flows and admin command consoles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ Packages ============ -->
+    <section id="packages" class="py-20 md:py-24 px-6 border-t border-borderSubtle">
+        <div class="max-w-6xl mx-auto">
+            <div class="section-head text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-mono uppercase tracking-widest text-tealAccent block mb-2">Clear Pricing</span>
+                <h2 class="h2-tight text-3xl md:text-4xl font-black mb-4">Choose Your Package</h2>
+                <p class="text-gray-400 text-base">Clear scope, clear prices, no surprises.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 items-stretch">
+                <!-- Launch -->
+                <div class="card-lift p-8 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between">
                     <div>
-                        <span class="text-xs font-mono text-tealAccent uppercase tracking-wider">Get Found.</span>
-                        <h3 class="text-2xl font-bold text-white mt-1 mb-1">Launch</h3>
-                        <p class="text-gray-400 text-sm mb-6">One-page website</p>
-
-                        <div class="mb-6">
-                            <span class="text-sm text-gray-500 line-through">UGX 500,000</span>
-                            <div class="text-3xl font-extrabold text-white">UGX 350,000</div>
-                            <span class="text-xs text-tealAccent font-medium">Launch offer</span>
-                        </div>
-
-                        <ul class="space-y-3 text-sm text-gray-300 mb-8 border-t border-borderSubtle pt-6">
-                            <li class="flex items-center gap-2">✓ One-page mobile website</li>
-                            <li class="flex items-center gap-2">✓ WhatsApp and call buttons</li>
-                            <li class="flex items-center gap-2">✓ Google Maps link and basic SEO</li>
-                            <li class="flex items-center gap-2">✓ Ready in 4 days</li>
+                        <span class="text-xs font-mono uppercase tracking-widest text-tealAccent block mb-2">Get found.</span>
+                        <h3 class="text-2xl font-black mb-1">Launch</h3>
+                        <p class="text-gray-400 text-base mb-4">One-page website</p>
+                        <p class="text-gray-500 text-base line-through">UGX 500,000</p>
+                        <p class="text-3xl font-black mb-1">UGX 350,000</p>
+                        <p class="text-sm font-bold text-tealAccent mb-6">Launch offer</p>
+                        <ul class="space-y-3 text-base text-gray-200 mb-8">
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-signalBlue mt-2 flex-shrink-0"></span> One-page mobile website</li>
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-signalBlue mt-2 flex-shrink-0"></span> WhatsApp and call buttons</li>
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-signalBlue mt-2 flex-shrink-0"></span> Google Maps link and basic SEO</li>
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-signalBlue mt-2 flex-shrink-0"></span> Ready in 4 days</li>
                         </ul>
                     </div>
-                    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-borderSubtle border border-borderSubtle text-white text-center font-semibold hover:bg-signalBlue hover:border-signalBlue transition-all">
+                    <a href="https://wa.me/256758727445?text=Hi%20Gabriel%2C%20I%20am%20interested%20in%20the%20Launch%20package."
+                       target="_blank" rel="noopener noreferrer"
+                       class="press block w-full py-4 rounded-xl bg-signalBlue text-white font-bold text-center shadow-md">
                         Choose Launch
                     </a>
                 </div>
 
-                <!-- Package 2: Grow -->
-                <div class="p-8 rounded-3xl bg-cardBg border border-signalBlue relative flex flex-col justify-between shadow-xl shadow-signalBlue/10">
-                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-signalBlue text-white text-xs font-bold uppercase tracking-wider">
-                        Most Popular
-                    </div>
+                <!-- Grow (popular) -->
+                <div class="card-lift relative p-8 pt-10 rounded-2xl bg-cardBg border border-signalBlue/40 flex flex-col justify-between shadow-xl shadow-signalBlue/10">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-signalBlue text-white text-xs font-bold uppercase tracking-wider whitespace-nowrap">Most Popular</div>
                     <div>
-                        <span class="text-xs font-mono text-tealAccent uppercase tracking-wider">Get Chosen.</span>
-                        <h3 class="text-2xl font-bold text-white mt-1 mb-1">Grow</h3>
-                        <p class="text-gray-400 text-sm mb-6">Business website</p>
-
-                        <div class="mb-6">
-                            <span class="text-sm text-gray-500 line-through">UGX 1,200,000</span>
-                            <div class="text-3xl font-extrabold text-white">UGX 900,000</div>
-                            <span class="text-xs text-tealAccent font-medium">Launch offer</span>
-                        </div>
-
-                        <ul class="space-y-3 text-sm text-gray-300 mb-8 border-t border-borderSubtle pt-6">
-                            <li class="flex items-center gap-2">✓ Up to 5 pages</li>
-                            <li class="flex items-center gap-2">✓ Contact and booking or enquiry forms</li>
-                            <li class="flex items-center gap-2">✓ 4 widgets of your choice</li>
-                            <li class="flex items-center gap-2">✓ Local SEO and Google Business Profile</li>
-                            <li class="flex items-center gap-2">✓ Ready in 7 days</li>
+                        <span class="text-xs font-mono uppercase tracking-widest text-tealAccent block mb-2">Get chosen.</span>
+                        <h3 class="text-2xl font-black mb-1">Grow</h3>
+                        <p class="text-gray-400 text-base mb-4">Business website</p>
+                        <p class="text-gray-500 text-base line-through">UGX 1,200,000</p>
+                        <p class="text-3xl font-black mb-1">UGX 900,000</p>
+                        <p class="text-sm font-bold text-tealAccent mb-6">Launch offer</p>
+                        <ul class="space-y-3 text-base text-gray-200 mb-8">
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-tealAccent mt-2 flex-shrink-0"></span> Up to 5 pages</li>
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-tealAccent mt-2 flex-shrink-0"></span> Contact and booking or enquiry forms</li>
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-tealAccent mt-2 flex-shrink-0"></span> 4 widgets of your choice</li>
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-tealAccent mt-2 flex-shrink-0"></span> Local SEO and Google Business Profile</li>
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-tealAccent mt-2 flex-shrink-0"></span> Ready in 7 days</li>
                         </ul>
                     </div>
-                    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-signalBlue text-white text-center font-semibold hover:bg-blue-600 transition-all shadow-lg shadow-signalBlue/20">
+                    <a href="https://wa.me/256758727445?text=Hi%20Gabriel%2C%20I%20am%20interested%20in%20the%20Grow%20package."
+                       target="_blank" rel="noopener noreferrer"
+                       class="press block w-full py-4 rounded-xl bg-signalBlue text-white font-bold text-center shadow-md">
                         Choose Grow
                     </a>
                 </div>
 
-                <!-- Package 3: Scale -->
-                <div class="p-8 rounded-3xl bg-cardBg border border-borderSubtle flex flex-col justify-between hover:border-signalBlue/50 transition-all">
+                <!-- Scale -->
+                <div class="card-lift p-8 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between">
                     <div>
-                        <span class="text-xs font-mono text-tealAccent uppercase tracking-wider">Get Paid.</span>
-                        <h3 class="text-2xl font-bold text-white mt-1 mb-1">Scale</h3>
-                        <p class="text-gray-400 text-sm mb-6">Online shop</p>
-
-                        <div class="mb-6">
-                            <span class="text-sm text-gray-500 line-through">UGX 3,000,000</span>
-                            <div class="text-3xl font-extrabold text-white">UGX 2,250,000</div>
-                            <span class="text-xs text-tealAccent font-medium">Launch offer</span>
-                        </div>
-
-                        <ul class="space-y-3 text-sm text-gray-300 mb-8 border-t border-borderSubtle pt-6">
-                            <li class="flex items-center gap-2">✓ Shop with cart and checkout</li>
-                            <li class="flex items-center gap-2">✓ Mobile Money and card payments</li>
-                            <li class="flex items-center gap-2">✓ Admin dashboard for products & orders</li>
-                            <li class="flex items-center gap-2">✓ Full SEO and analytics</li>
-                            <li class="flex items-center gap-2">✓ Ready in 3 weeks</li>
+                        <span class="text-xs font-mono uppercase tracking-widest text-tealAccent block mb-2">Get paid.</span>
+                        <h3 class="text-2xl font-black mb-1">Scale</h3>
+                        <p class="text-gray-400 text-base mb-4">Online shop</p>
+                        <p class="text-gray-500 text-base line-through">UGX 3,000,000</p>
+                        <p class="text-3xl font-black mb-1">UGX 2,250,000</p>
+                        <p class="text-sm font-bold text-tealAccent mb-6">Launch offer</p>
+                        <ul class="space-y-3 text-base text-gray-200 mb-8">
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-signalBlue mt-2 flex-shrink-0"></span> Shop with cart and checkout</li>
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-signalBlue mt-2 flex-shrink-0"></span> Mobile Money and card payments</li>
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-signalBlue mt-2 flex-shrink-0"></span> Admin dashboard for products and orders</li>
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-signalBlue mt-2 flex-shrink-0"></span> Full SEO and analytics</li>
+                            <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full bg-signalBlue mt-2 flex-shrink-0"></span> Ready in 3 weeks</li>
                         </ul>
                     </div>
-                    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-borderSubtle border border-borderSubtle text-white text-center font-semibold hover:bg-signalBlue hover:border-signalBlue transition-all">
+                    <a href="https://wa.me/256758727445?text=Hi%20Gabriel%2C%20I%20am%20interested%20in%20the%20Scale%20package."
+                       target="_blank" rel="noopener noreferrer"
+                       class="press block w-full py-4 rounded-xl bg-signalBlue text-white font-bold text-center shadow-md">
                         Choose Scale
                     </a>
                 </div>
             </div>
-            <p class="text-center text-xs text-gray-500 mt-8">Launch offer prices apply to the initial build. Domain registration is paid separately.</p>
+
+            <p class="text-gray-400 text-sm text-center mt-10">Launch offer prices apply to the first 5 clients per package. Domain registration is paid separately. Optional monthly care plans from UGX 50,000.</p>
         </div>
     </section>
 
-    <!-- Portfolio Section (All Four Works Restored) -->
-    <section id="portfolio" class="py-16 px-6 border-t border-borderSubtle">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-12">
-                <span class="text-tealAccent text-xs font-mono uppercase tracking-widest">Portfolio Showcase</span>
-                <h2 class="text-3xl font-bold text-white mt-2">Recent Client Builds</h2>
-                <p class="text-gray-400 text-sm mt-1">Tap through to explore live builds and custom web systems.</p>
+    <!-- ============ Free Preview Offer ============ -->
+    <section id="offer" class="py-20 md:py-24 px-6 border-t border-borderSubtle relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-tealAccent/5 blur-[120px] pointer-events-none rounded-full"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="section-head text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-mono uppercase tracking-widest text-tealAccent block mb-2">Zero Risk Guarantee</span>
+                <h2 class="h2-tight text-3xl md:text-4xl font-black mb-4">Special Offer</h2>
+                <p class="text-gray-400 text-base">Get a clear look at your new digital presence before committing.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Work 1: DStyleHub Store System -->
-                <div class="p-6 rounded-3xl bg-cardBg border border-borderSubtle flex flex-col justify-between hover:border-signalBlue/50 transition-all">
-                    <div>
-                        <span class="px-3 py-1 rounded-full bg-signalBlue/10 text-signalBlue text-xs font-medium">E-Commerce</span>
-                        <h3 class="text-xl font-bold text-white mt-3 mb-2">DStyleHub Store System</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                            Full clothing store e-commerce build with variant sizing, shopping cart workflows, and an admin command console.
-                        </p>
-                    </div>
-                    <div class="flex items-center justify-between pt-4 border-t border-borderSubtle">
-                        <a href="https://dstylehub.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-tealAccent font-semibold hover:text-white transition-colors text-sm">
-                            View Live &rarr;
-                        </a>
-                        <span class="text-xs text-gray-500 font-mono">E-Commerce</span>
-                    </div>
-                </div>
-
-                <!-- Work 2: Kick Snacks Landing Page -->
-                <div class="p-6 rounded-3xl bg-cardBg border border-borderSubtle flex flex-col justify-between hover:border-signalBlue/50 transition-all">
-                    <div>
-                        <span class="px-3 py-1 rounded-full bg-tealAccent/10 text-tealAccent text-xs font-medium">Landing Page</span>
-                        <h3 class="text-xl font-bold text-white mt-3 mb-2">Kick Snacks Landing Page</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                            Vibrant product showcase layout engineered for fast-moving consumer goods to maximize brand visibility.
-                        </p>
-                    </div>
-                    <div class="flex items-center justify-between pt-4 border-t border-borderSubtle">
-                        <a href="https://kicksnacks.co" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-tealAccent font-semibold hover:text-white transition-colors text-sm">
-                            View Live &rarr;
-                        </a>
-                        <span class="text-xs text-gray-500 font-mono">Landing Page</span>
-                    </div>
-                </div>
-
-                <!-- Work 3: Laker Angel Portfolio -->
-                <div class="p-6 rounded-3xl bg-cardBg border border-borderSubtle flex flex-col justify-between hover:border-signalBlue/50 transition-all">
-                    <div>
-                        <span class="px-3 py-1 rounded-full bg-signalBlue/10 text-signalBlue text-xs font-medium">Personal Brand</span>
-                        <h3 class="text-xl font-bold text-white mt-3 mb-2">Laker Angel Portfolio</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                            Clean multi-tab personal portfolio structured to establish digital authority and professional trust.
-                        </p>
-                    </div>
-                    <div class="flex items-center justify-between pt-4 border-t border-borderSubtle">
-                        <a href="https://just-tryn.github.io/Angeli.ak" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-tealAccent font-semibold hover:text-white transition-colors text-sm">
-                            View Live &rarr;
-                        </a>
-                        <span class="text-xs text-gray-500 font-mono">Personal Brand</span>
-                    </div>
-                </div>
-
-                <!-- Work 4: Gabriel Digital Core -->
-                <div class="p-6 rounded-3xl bg-cardBg border border-borderSubtle flex flex-col justify-between hover:border-signalBlue/50 transition-all">
-                    <div>
-                        <span class="px-3 py-1 rounded-full bg-tealAccent/10 text-tealAccent text-xs font-medium">Agency Brand</span>
-                        <h3 class="text-xl font-bold text-white mt-3 mb-2">Gabriel Digital Infrastructure</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                            High-performance digital hub showcasing full-stack capabilities, backend systems, and web solutions in Gulu.
-                        </p>
-                    </div>
-                    <div class="flex items-center justify-between pt-4 border-t border-borderSubtle">
-                        <a href="https://gabriel-digital.pages.dev/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-tealAccent font-semibold hover:text-white transition-colors text-sm">
-                            View Live &rarr;
-                        </a>
-                        <span class="text-xs text-gray-500 font-mono">Agency Hub</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Special Offer Section -->
-    <section class="py-16 px-6 border-t border-borderSubtle">
-        <div class="max-w-3xl mx-auto">
-            <div class="p-8 rounded-3xl bg-cardBg border border-borderSubtle text-center">
-                <span class="text-tealAccent text-xs font-mono uppercase tracking-widest">Zero Risk Guarantee</span>
-                <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-3">Free Website Preview</h2>
-                <p class="text-gray-400 text-sm mb-8 max-w-xl mx-auto">
-                    Experience a custom preview tailored to your business model before you commit. Zero upfront commitment, tailored UI layout concept, checked on phone and desktop.
-                </p>
-                <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-signalBlue text-white font-bold hover:bg-blue-600 transition-all shadow-xl shadow-signalBlue/20">
+            <div class="offer-card max-w-lg mx-auto bg-cardBg p-8 md:p-10 rounded-3xl border border-borderSubtle shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-signalBlue text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl uppercase tracking-wider">Featured</div>
+                <h3 class="text-2xl font-black mb-2">Free Website Preview</h3>
+                <p class="text-gray-400 text-base mb-6">Experience a custom preview tailored to your business model before you build.</p>
+                <ul class="space-y-3 text-base text-gray-200 mb-4">
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-tealAccent"></span> Zero upfront commitment</li>
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-tealAccent"></span> Tailored UI layout concept</li>
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-tealAccent"></span> Checked on phone and desktop</li>
+                </ul>
+                <p class="text-gray-400 text-base mb-8">Limited to 5 free previews per month for businesses in Uganda. Send your business name, logo and a few photos on WhatsApp.</p>
+                <a href="https://wa.me/256758727445?text=Hi%20Gabriel%2C%20I%20would%20like%20a%20free%20website%20preview%20for%20my%20business."
+                   target="_blank" rel="noopener noreferrer"
+                   class="press block w-full py-4 rounded-xl bg-signalBlue text-white font-bold text-center shadow-md">
                     Claim Free Preview
                 </a>
-                <p class="text-xs text-gray-500 mt-4">Limited to 5 free previews per month for businesses in Uganda. Send your business name, logo and a few photos on WhatsApp.</p>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action Section -->
-    <section class="py-20 px-6 border-t border-borderSubtle relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-t from-signalBlue/10 to-transparent pointer-events-none"></div>
-        <div class="max-w-3xl mx-auto text-center relative z-10">
-            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-6">
-                Let's Build Your Digital Presence
-            </h2>
-            <p class="text-gray-400 text-base sm:text-lg mb-8 max-w-xl mx-auto">
-                Ready to get more customers? Connect via WhatsApp to start your project.
-            </p>
-            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-tealAccent text-black font-bold hover:bg-teal-400 transition-all shadow-xl shadow-tealAccent/20 active:scale-98">
-                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                Chat on WhatsApp
-            </a>
+    <!-- ============ Portfolio ============ -->
+    <section id="portfolio" class="py-20 md:py-24 px-6 border-t border-borderSubtle">
+        <div class="max-w-6xl mx-auto">
+            <div class="section-head text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-mono uppercase tracking-widest text-tealAccent block mb-2">Selected Work</span>
+                <h2 class="h2-tight text-3xl md:text-4xl font-black mb-4">Portfolio Showcase</h2>
+                <p class="text-gray-400 text-base">Tap any preview image to expand full-screen, or click through to explore live builds.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- DStyleHub -->
+                <div class="card-lift p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="tile h-44 rounded-xl bg-black mb-6 overflow-hidden cursor-pointer"
+                             onclick="openLightbox('assets/images/DstyleHUB.jpg', 'DStyleHub Store & Admin Portal', this)">
+                            <img src="assets/images/DstyleHUB.jpg" alt="DStyleHub menswear e-commerce catalog and store preview"
+                                 loading="lazy" decoding="async" width="600" height="352"
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">DStyleHub Store System</h3>
+                        <p class="text-gray-400 text-base leading-relaxed mb-4">Full clothing store e-commerce build with variant sizing, shopping cart workflows, and an admin command console.</p>
+                    </div>
+                    <div class="pt-4 border-t border-borderSubtle flex items-center justify-between">
+                        <a href="https://dstylhub.vercel.app/" target="_blank" rel="noopener noreferrer"
+                           class="press tap-target inline-flex items-center gap-2 text-base font-bold text-tealAccent">
+                            View Live &rarr;
+                        </a>
+                        <span class="text-sm text-gray-500 font-medium">E-Commerce</span>
+                    </div>
+                </div>
+
+                <!-- Kick Snacks -->
+                <div class="card-lift p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="tile h-44 rounded-xl bg-black mb-6 overflow-hidden cursor-pointer"
+                             onclick="openLightbox('assets/images/Kicksnack.jpg', 'Kick Snacks Landing Page', this)">
+                            <img src="assets/images/Kicksnack.jpg" alt="Kick Snacks FMCG promotional product landing page preview"
+                                 loading="lazy" decoding="async" width="600" height="352"
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Kick Snacks Landing Page</h3>
+                        <p class="text-gray-400 text-base leading-relaxed mb-4">Vibrant product showcase layout engineered for fast-moving consumer goods to maximize brand visibility.</p>
+                    </div>
+                    <div class="pt-4 border-t border-borderSubtle flex items-center justify-between">
+                        <a href="https://project-pxy5j.vercel.app/" target="_blank" rel="noopener noreferrer"
+                           class="press tap-target inline-flex items-center gap-2 text-base font-bold text-tealAccent">
+                            View Live &rarr;
+                        </a>
+                        <span class="text-sm text-gray-500 font-medium">Landing Page</span>
+                    </div>
+                </div>
+
+                <!-- Laker Angel -->
+                <div class="card-lift p-6 rounded-2xl bg-cardBg border border-borderSubtle flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="tile h-44 rounded-xl bg-black mb-6 overflow-hidden cursor-pointer"
+                             onclick="openLightbox('assets/images/LakerAngel.jpg', 'Laker Angel Portfolio', this)">
+                            <img src="assets/images/LakerAngel.jpg" alt="Laker Angel Certified Accountant personal portfolio layout preview"
+                                 loading="lazy" decoding="async" width="600" height="352"
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Laker Angel Portfolio</h3>
+                        <p class="text-gray-400 text-base leading-relaxed mb-4">Clean multi-tab personal portfolio structured to establish digital authority and professional trust.</p>
+                    </div>
+                    <div class="pt-4 border-t border-borderSubtle flex items-center justify-between">
+                        <a href="https://jus-tryin.github.io/AngelLaker-Portfolio/" target="_blank" rel="noopener noreferrer"
+                           class="press tap-target inline-flex items-center gap-2 text-base font-bold text-tealAccent">
+                            View Live &rarr;
+                        </a>
+                        <span class="text-sm text-gray-500 font-medium">Personal Brand</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-8 px-6 border-t border-borderSubtle text-center text-xs text-gray-500">
-        <p>&copy; 2026 Gabriel Digital. All Rights Reserved. Based in Gulu, Uganda.</p>
+    <!-- ============ Contact / CTA ============ -->
+    <section id="contact" class="py-20 md:py-24 px-6 border-t border-borderSubtle relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-t from-signalBlue/10 to-transparent pointer-events-none"></div>
+        <div class="cta-inner max-w-3xl mx-auto text-center relative z-10">
+            <span class="text-xs font-mono uppercase tracking-widest text-tealAccent block mb-3">Get Started Today</span>
+            <h2 class="h2-tight text-3xl md:text-5xl font-black mb-4">Let's Build Your Digital Presence</h2>
+            <p class="text-gray-400 text-base md:text-lg mb-8 max-w-lg mx-auto">Ready to get more customers? Reach out directly via WhatsApp to start your project.</p>
+
+            <a href="https://wa.me/256758727445?text=Hi%20Gabriel%2C%20I%20would%20like%20to%20discuss%20a%20website%20for%20my%20business."
+               target="_blank" rel="noopener noreferrer"
+               class="press inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-whatsapp text-white font-bold text-base shadow-xl shadow-whatsapp/20">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Chat on WhatsApp
+            </a>
+            <p class="text-gray-400 text-base mt-8">
+                Prefer a call? <a href="tel:+256758727445" class="press inline-block py-2 underline font-semibold text-white">+256 758 727 445</a>
+                &nbsp;|&nbsp; Follow us on <a href="https://www.instagram.com/gabriel_digital.co/" target="_blank" rel="noopener noreferrer" class="press inline-block py-2 underline font-semibold text-white">Instagram</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- ============ Footer ============ -->
+    <footer class="site-footer py-8 px-6 bg-black text-center text-sm text-gray-500 border-t border-borderSubtle">
+        <p>&copy; 2026 Gabriel Digital. All rights reserved. Gulu, Uganda.</p>
     </footer>
 
+    <!-- ============ Floating WhatsApp ============ -->
+    <a href="https://wa.me/256758727445?text=Hi%20Gabriel%2C%20I%20found%20your%20website."
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Chat with Gabriel on WhatsApp"
+       class="fab-whatsapp press fixed z-40 inline-flex items-center px-5 py-3.5 rounded-full bg-whatsapp text-white font-bold text-base shadow-2xl shadow-black/40">
+        Chat on WhatsApp
+    </a>
+
+    <!-- ============ Lightbox ============ -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/90 hidden flex-col items-center justify-center" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button id="lightboxClose" onclick="closeLightbox()" aria-label="Close preview"
+                class="press absolute text-white text-3xl font-bold p-2 hover:text-tealAccent transition-colors">&times;</button>
+        <img id="lightboxImg" src="" alt="Full screen preview" class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl mb-4">
+        <p id="lightboxCaption" class="text-white text-sm font-medium tracking-wide px-4 text-center"></p>
+    </div>
+
+    <script src="js/main.js" defer></script>
 </body>
 </html>
